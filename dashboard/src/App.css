@@ -1,0 +1,29 @@
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track styling */
+::-webkit-scrollbar-track {
+  background-color: #f0f4ff; /* Light mode base */
+  border-radius: 10px;
+}
+
+/* Thumb styling */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #642bff, #ff22e6);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  transition: background 0.3s ease;
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #531dd8, #d118c2);
+}
+
+/* Optional dark mode support using a class (if Tailwind dark mode is class-based) */
+.dark ::-webkit-scrollbar-track {
+  background-color: #1e1e2f;
+}
