@@ -35,7 +35,6 @@ const ResetPassword = () => {
     if (message) {
       toast.success(message);
       dispatch(getUser());
-      // Optional: clear message from store here if needed
     }
   }, [message]);
 
@@ -100,7 +99,6 @@ const ResetPassword = () => {
               <SpecialLoadingButton content={"Resetting Your Password"} />
             )}
           </form>
-          {/* Form ends */}
         </div>
       </div>
       <div className="flex justify-center items-center bg-muted">

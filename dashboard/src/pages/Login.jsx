@@ -16,7 +16,7 @@ const Login = () => {
   const navigateTo = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault(); // prevents default form submission behavior
+    e.preventDefault(); 
     dispatch(login(email, password));
   };
 

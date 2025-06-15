@@ -302,7 +302,7 @@ const HomePage = () => {
               </Link>
             </nav>
 
-            {/* ModeToggle inside mobile menu at bottom */}
+  
             <div className="border-t border-muted-foreground mt-6 pt-4">
               <ModeToggle />
             </div>
@@ -310,7 +310,7 @@ const HomePage = () => {
         </Sheet>
 
         <div className="flex flex-wrap items-center justify-between w-full sm:mt-5">
-          {/* Left side: Avatar + Welcome */}
+ 
           <div className="flex items-center gap-4 ml-0 sm:ml-20 min-w-0">
             <img
               src={user && user.avatar && user.avatar.url}
@@ -325,7 +325,6 @@ const HomePage = () => {
             </h1>
           </div>
 
-          {/* Right side: ModeToggle - visible on sm+ */}
           <div className="mt-2 sm:mt-0 hidden sm:block">
             <ModeToggle />
           </div>

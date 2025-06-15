@@ -20,7 +20,7 @@ import {
   updateProject,
 } from "@/store/slices/projectSlice";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/components/theme-provider";  // Import the theme hook
+import { useTheme } from "@/components/theme-provider"; 
 
 const UpdateProject = () => {
   const [title, setTitle] = useState("");
@@ -38,7 +38,7 @@ const UpdateProject = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
 
-  const { theme } = useTheme();  // Get current theme
+  const { theme } = useTheme();  
 
   const handleProjectBanner = (e) => {
     const file = e.target.files[0];
@@ -105,7 +105,6 @@ const UpdateProject = () => {
     navigateTo("/");
   };
 
-  // Conditional classes based on theme
   const containerClass =
     theme === "dark"
       ? "min-h-screen bg-[#0A0A0A] text-white flex items-center justify-center px-4 py-12"
@@ -149,7 +148,6 @@ const UpdateProject = () => {
           </Button>
         </div>
 
-        {/* Banner */}
         <div>
           <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
             Project Banner
@@ -180,9 +178,9 @@ const UpdateProject = () => {
           </div>
         </div>
 
-        {/* Form Grid */}
+  
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Title */}
+
           <div>
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Project Title
@@ -196,7 +194,7 @@ const UpdateProject = () => {
             />
           </div>
 
-          {/* Stack */}
+
           <div>
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Stack
@@ -238,7 +236,7 @@ const UpdateProject = () => {
             )}
           </div>
 
-          {/* Technologies */}
+
           <div className="sm:col-span-2">
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Technologies Used
@@ -251,7 +249,6 @@ const UpdateProject = () => {
             />
           </div>
 
-          {/* Description */}
           <div className="sm:col-span-2">
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Description
@@ -264,7 +261,7 @@ const UpdateProject = () => {
             />
           </div>
 
-          {/* Deployed */}
+
           <div>
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Deployed On
@@ -278,7 +275,7 @@ const UpdateProject = () => {
             />
           </div>
 
-          {/* Git Repo Link */}
+
           <div>
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Git Repo Link
@@ -295,7 +292,7 @@ const UpdateProject = () => {
             </div>
           </div>
 
-          {/* Project Link */}
+
           <div>
             <label className={`block text-sm font-semibold mb-2 ${theme === "dark" ? "text-white" : "text-gray-700"}`}>
               Project Link

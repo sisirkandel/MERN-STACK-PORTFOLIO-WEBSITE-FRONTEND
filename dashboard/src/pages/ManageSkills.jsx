@@ -37,11 +37,10 @@ const ManageSkills = () => {
   );
   const dispatch = useDispatch();
 
-  // We'll keep track of the slider values locally per skill for real-time display
   const [proficiencyMap, setProficiencyMap] = useState({});
 
   useEffect(() => {
-    // Initialize proficiencyMap with current skills' proficiencies
+
     if (skills && skills.length > 0) {
       const map = {};
       skills.forEach((skill) => {

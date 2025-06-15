@@ -47,7 +47,6 @@ const ForgotPassword = () => {
             </p>
           </div>
 
-          {/* Form starts here */}
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -87,7 +86,7 @@ const ForgotPassword = () => {
               <SpecialLoadingButton content={"Requesting"} />
             )}
           </form>
-          {/* Form ends here */}
+
         </div>
       </div>
 

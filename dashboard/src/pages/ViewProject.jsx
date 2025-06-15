@@ -46,7 +46,7 @@ const ViewProject = () => {
   const descriptionList = description ? description.split(". ").filter(Boolean) : [];
   const technologiesList = technologies ? technologies.split(", ").filter(Boolean) : [];
 
-  // Utility to check if deployed is truthy (yes/true)
+
   const isDeployed = /^true|yes$/i.test(deployed);
 
   return (
